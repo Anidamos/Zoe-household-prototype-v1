@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find a Campus | ZOE Household</title>
+    <meta name="description" content="Find the closest ZOE Household campus or join the Atlanta campus livestream online.">
+    <link rel="stylesheet" href="styles.css?v=hero-crop-higher-zoom">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="atmosphere-field" aria-hidden="true">
+      <div class="atmosphere-layer atmosphere-back"></div>
+      <div class="atmosphere-layer atmosphere-mid"></div>
+      <div class="atmosphere-layer atmosphere-front"></div>
+    </div>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="assets/zoe-mark-logo.png" alt=""></span><span><strong>ZOE Household</strong><small>Campus Finder</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <div class="nav-menu">
+          <button class="nav-menu-toggle" type="button" aria-expanded="false" data-campus-menu-toggle>Campuses</button>
+          <div class="nav-dropdown" aria-label="Campus pages">
+            <a href="campus-atl.html?campus=atlanta" data-campus-link="Atlanta"><strong>Atlanta</strong><span>USA</span></a>
+            <a href="campus-atl.html?campus=houston" data-campus-link="Houston"><strong>Houston</strong><span>USA</span></a>
+            <a href="campus-atl.html?campus=uk" data-campus-link="UK"><strong>UK</strong><span>UK</span></a>
+            <a href="campus-atl.html?campus=ikeja" data-campus-link="Ikeja"><strong>Ikeja</strong><span>Nigeria</span></a>
+            <a href="campus-atl.html?campus=ipaja" data-campus-link="Ipaja"><strong>Ipaja</strong><span>Nigeria</span></a>
+            <a href="campus-atl.html?campus=abeokuta" data-campus-link="Abeokuta"><strong>Abeokuta</strong><span>Nigeria</span></a>
+            <a href="campus-atl.html?campus=yaba" data-campus-link="Yaba"><strong>Yaba</strong><span>Nigeria</span></a>
+          </div>
+        </div>
+        <a href="https://youtube.com/@thezoehouseholdtv5?si=_t1UFKYPPsSxbpCP" target="_blank" rel="noopener">Sermons</a><div class="nav-menu"><button class="nav-menu-toggle" type="button" aria-expanded="false" data-nav-menu-toggle>Ministries</button><div class="nav-dropdown" aria-label="Ministry pages"><a href="ministry-pneuma.html"><strong>Pneuma Worship</strong><span>Worship</span></a><a href="ministry-discipleship.html"><strong>Disciple Program</strong><span>Formation</span></a><a href="ministry-outreach.html"><strong>Outreach & Missions</strong><span>Mission</span></a></div></div><a class="nav-give" href="prayer.html">Prayer</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="geo-page" data-geo-page>
+        <div class="geo-light geo-light-one" aria-hidden="true"></div>
+        <div class="geo-light geo-light-two" aria-hidden="true"></div>
+        <div class="geo-copy" data-geo-intro>
+          <p class="eyebrow">ZOE Map Navigation</p>
+          <h1>Find Your Household.</h1>
+          <p>Enter your address and we’ll help you find the Zoe campus closest to you.</p>
+          <form class="geo-search" data-campus-finder-form>
+            <label>Address or city<input name="address" required placeholder="Example: Dallas, TX or London, UK" data-campus-address></label>
+            <button class="button button-primary" type="submit">Find My Campus</button>
+          </form>
+          <p class="geo-note">Prototype logic uses region matching and estimated drive time. A production build would connect geocoding, routing, and time zone APIs.</p>
+        </div>
+
+        <div class="geo-stage" aria-label="Cinematic ZOE global campus finder" data-campus-result>
+          <div class="geo-stars" aria-hidden="true"></div>
+          <div class="geo-globe-wrap" data-geo-globe-wrap>
+            <div class="geo-globe" data-geo-globe>
+              <div class="geo-grid" aria-hidden="true"></div>
+              <div class="geo-continent continent-americas" aria-hidden="true"></div>
+              <div class="geo-continent continent-europe-africa" aria-hidden="true"></div>
+              <div class="geo-continent continent-africa" aria-hidden="true"></div>
+              <svg class="geo-route" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <path data-geo-route d="M 50 50 C 50 50, 50 50, 50 50"></path>
+              </svg>
+              <span class="geo-user-marker" data-user-marker hidden><i></i><b>You</b></span>
+              <span class="geo-marker marker-atlanta" data-campus-marker="atlanta"><i></i><b>Atlanta</b></span>
+              <span class="geo-marker marker-houston" data-campus-marker="houston"><i></i><b>Houston</b></span>
+              <span class="geo-marker marker-uk" data-campus-marker="uk"><i></i><b>UK</b></span>
+              <span class="geo-marker marker-ikeja" data-campus-marker="ikeja"><i></i><b>Ikeja</b></span>
+              <span class="geo-marker marker-ipaja" data-campus-marker="ipaja"><i></i><b>Ipaja</b></span>
+              <span class="geo-marker marker-yaba" data-campus-marker="yaba"><i></i><b>Yaba</b></span>
+              <span class="geo-marker marker-abeokuta" data-campus-marker="abeokuta"><i></i><b>Abeokuta</b></span>
+            </div>
+          </div>
+          <div class="geo-result-panel" aria-live="polite" data-geo-result-panel>
+            <p class="eyebrow" data-map-status>Waiting for address</p>
+            <h2 data-map-title>Zoe is across the world.</h2>
+            <p data-map-copy>When you enter a location, the globe will move toward your region and reveal the nearest doorway into the household.</p>
+            <dl class="geo-result-details" data-result-details hidden>
+              <div><dt>Address</dt><dd data-result-address></dd></div>
+              <div><dt>Drive Time</dt><dd data-result-drive></dd></div>
+              <div><dt>Meeting Time</dt><dd data-result-meeting></dd></div>
+            </dl>
+            <div class="map-result-actions" data-map-actions hidden></div>
+          </div>
+        </div>
+
+        <div class="online-invite geo-online" data-online-invite hidden>
+          <div class="online-graphic" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div>
+            <p class="eyebrow">Online Visitor</p>
+            <h2>No campus is within 3 hours yet, but you can join us online.</h2>
+            <p data-livestream-copy>The next Atlanta campus livestream time will appear here in your local time zone.</p>
+            <div class="countdown-grid" data-countdown-grid>
+              <span><strong data-countdown-days>--</strong><small>Days</small></span>
+              <span><strong data-countdown-hours>--</strong><small>Hours</small></span>
+              <span><strong data-countdown-minutes>--</strong><small>Minutes</small></span>
+            </div>
+          </div>
+          <form class="reminder-card" data-reminder-form>
+            <h3>Get updates</h3>
+            <label>Name<input name="name" placeholder="First and last name"></label>
+            <label>Email<input name="email" type="email" placeholder="you@example.com"></label>
+            <label>Phone optional<input name="phone" inputmode="tel" placeholder="+1 404 000 0000"></label>
+            <label class="checkbox"><input type="checkbox" name="consent" required> Send me livestream and campus updates.</label>
+            <button class="button button-primary" type="submit">Get Updates</button>
+            <p class="form-status" data-reminder-status></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-brand"><img src="assets/zoe-global-logo.jpg" alt="ZOE Global"><div><strong>ZOE Household</strong><p>Find a campus or join online.</p></div></div><p>&copy; <span data-year></span> ZOE Household.</p></footer>
+    <div class="toast" data-toast-box role="status" aria-live="polite"></div>
+    <script src="assets/gsap.min.js"></script>
+    <script src="script.js?v=header-ministries"></script>
+  </body>
+</html>

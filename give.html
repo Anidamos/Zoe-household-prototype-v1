@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Give | ZOE Household</title>
+    <meta name="description" content="Give to ZOE Household through a warm, simple giving page prototype.">
+    <link rel="stylesheet" href="styles.css?v=hero-crop-higher-zoom">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="assets/zoe-mark-logo.png" alt=""></span><span><strong>ZOE Household</strong><small>Giving</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="index.html">Home</a><a href="zoe-map.html">Campuses</a><div class="nav-menu"><button class="nav-menu-toggle" type="button" aria-expanded="false" data-nav-menu-toggle>Ministries</button><div class="nav-dropdown" aria-label="Ministry pages"><a href="ministry-pneuma.html"><strong>Pneuma Worship</strong><span>Worship</span></a><a href="ministry-discipleship.html"><strong>Disciple Program</strong><span>Formation</span></a><a href="ministry-outreach.html"><strong>Outreach & Missions</strong><span>Mission</span></a></div></div><a class="nav-give" href="prayer.html">Prayer</a><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero give-hero">
+        <div class="page-hero-copy reveal">
+          <p class="eyebrow">Give</p>
+          <h1>Partner with the life of the household.</h1>
+          <p>Your generosity helps support worship gatherings, discipleship, outreach, care, and the work of the ministry across campuses.</p>
+        </div>
+      </section>
+      <section class="section split-section">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Secure Giving</p>
+          <h2>Give securely through Tithe.ly.</h2>
+          <p>Use the Zoe Atlanta giving link for tithes, offerings, missions, and care gifts. The production site can still embed this flow later.</p>
+          <ul class="check-list">
+            <li>One-time and recurring gifts</li>
+            <li>Campus or fund selection</li>
+            <li>Clear confirmation state</li>
+          </ul>
+        </div>
+        <form class="form-card reveal" data-demo-form>
+          <h3>Giving Preview</h3>
+          <label>Amount<input name="amount" required inputmode="decimal" placeholder="$100"></label>
+          <label>Campus<select name="campus" required><option value="">Select campus</option><option>Atlanta</option><option>Houston</option><option>UK</option><option>Ikeja</option><option>Ipaja</option><option>Abeokuta</option><option>Yaba</option></select></label>
+          <label>Gift type<select name="type" required><option>Tithe</option><option>Offering</option><option>Missions</option><option>Care Fund</option></select></label>
+          <a class="button button-primary" href="https://give.tithe.ly/?formId=38e44ec6-bbde-428c-b073-df0309a7e479&amp;context=modal" target="_blank" rel="noopener">Continue to Secure Giving</a>
+          <p class="form-status" data-form-status></p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-brand"><img src="assets/zoe-global-logo.jpg" alt="ZOE Global"><div><strong>ZOE Household</strong><p>Giving page prototype.</p></div></div><p>&copy; <span data-year></span> ZOE Household.</p></footer>
+    <script src="assets/gsap.min.js"></script>
+    <script src="script.js?v=header-ministries"></script>
+  </body>
+</html>

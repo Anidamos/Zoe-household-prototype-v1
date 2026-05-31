@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZOE Household | Welcome Home</title>
+    <meta name="description" content="A warm, cinematic website prototype for ZOE Household. Plan a visit, watch sermons, discover campuses, pray, and give.">
+  <link rel="stylesheet" href="styles.css?v=sound-icon-mobile-small">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="atmosphere-field" aria-hidden="true">
+      <div class="atmosphere-layer atmosphere-back"></div>
+      <div class="atmosphere-layer atmosphere-mid"></div>
+      <div class="atmosphere-layer atmosphere-front"></div>
+    </div>
+    <aside class="scene-rail" aria-label="Page scenes">
+      <span data-scene-dot="arrival">Arrival</span>
+      <span data-scene-dot="household">Campuses</span>
+      <span data-scene-dot="teaching">Teaching</span>
+      <span data-scene-dot="impact">Impact</span>
+      <span data-scene-dot="invitation">Invitation</span>
+    </aside>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="ZOE Household home">
+        <span class="brand-mark"><img src="assets/zoe-mark-logo.png" alt=""></span>
+        <span>
+          <strong>ZOE Household</strong>
+          <small>Life in Christ, together</small>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <div class="nav-menu">
+          <button class="nav-menu-toggle" type="button" aria-expanded="false" data-campus-menu-toggle>Campuses</button>
+          <div class="nav-dropdown" aria-label="Campus pages">
+            <a href="campus-atl.html?campus=atlanta" data-campus-link="Atlanta"><strong>Atlanta</strong><span>USA</span></a>
+            <a href="campus-atl.html?campus=houston" data-campus-link="Houston"><strong>Houston</strong><span>USA</span></a>
+            <a href="campus-atl.html?campus=uk" data-campus-link="UK"><strong>UK</strong><span>UK</span></a>
+            <a href="campus-atl.html?campus=ikeja" data-campus-link="Ikeja"><strong>Ikeja</strong><span>Nigeria</span></a>
+            <a href="campus-atl.html?campus=ipaja" data-campus-link="Ipaja"><strong>Ipaja</strong><span>Nigeria</span></a>
+            <a href="campus-atl.html?campus=abeokuta" data-campus-link="Abeokuta"><strong>Abeokuta</strong><span>Nigeria</span></a>
+            <a href="campus-atl.html?campus=yaba" data-campus-link="Yaba"><strong>Yaba</strong><span>Nigeria</span></a>
+          </div>
+        </div>
+        <a href="https://youtube.com/@thezoehouseholdtv5?si=_t1UFKYPPsSxbpCP" target="_blank" rel="noopener">Sermons</a>
+        <a href="#events">Events</a>
+        <div class="nav-menu">
+          <button class="nav-menu-toggle" type="button" aria-expanded="false" data-nav-menu-toggle>Ministries</button>
+          <div class="nav-dropdown" aria-label="Ministry pages">
+            <a href="ministry-pneuma.html"><strong>Pneuma Worship</strong><span>Worship</span></a>
+            <a href="ministry-discipleship.html"><strong>Disciple Program</strong><span>Formation</span></a>
+            <a href="ministry-outreach.html"><strong>Outreach & Missions</strong><span>Mission</span></a>
+          </div>
+        </div>
+        <a class="nav-give" href="prayer.html">Prayer</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero scene" data-scene="arrival">
+        <video class="hero-video" aria-hidden="true" autoplay loop playsinline preload="auto" poster="assets/zoe-welcome-team.jpg" data-hero-video>
+          <source src="assets/zoe-hero-compilation-v1.mov" type="video/mp4">
+          <source src="assets/zoe-hero-video.m4v" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">ZOE Household</p>
+          <div class="definition-hero" aria-label="ZOE Greek Christian definition">
+            <span class="word-origin">Greek: ζωή</span>
+            <h1>Zoe</h1>
+            <div class="pronunciation-row">
+              <p class="pronunciation">/ zoh-ay / noun</p>
+              <button class="sound-toggle" type="button" aria-pressed="false" aria-label="Toggle hero video sound" data-sound-toggle>
+                <svg class="speaker-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 9v6h4l5 4V5L8 9z"></path>
+                  <path class="speaker-wave" d="M16 9.5c1.3 1.3 1.3 3.7 0 5"></path>
+                  <path class="speaker-wave speaker-wave-outer" d="M18.5 7c2.6 2.7 2.6 7.3 0 10"></path>
+                  <path class="speaker-slash" d="M4 20 20 4"></path>
+                </svg>
+                <span class="sr-only" data-sound-label>Sound off</span>
+              </button>
+            </div>
+            <p class="definition-line">The God-kind of life: life in Christ, received from Him and lived together as His household.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="zoe-map.html">Plan Your Visit</a>
+            <a class="button button-secondary" href="https://youtube.com/@thezoehouseholdtv5?si=_t1UFKYPPsSxbpCP" target="_blank" rel="noopener">Watch a Sermon</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="definition-band scene-bridge reveal" aria-label="ZOE definition" data-scene="meaning">
+        <img class="global-logo-mark" src="assets/zoe-global-logo.jpg" alt="ZOE Global">
+        <div>
+          <p class="eyebrow">Welcome Home</p>
+          <h2>A household built around Jesus.</h2>
+        </div>
+      </section>
+
+      <section class="section household-hall scene-section scene-family" id="campuses" data-scene="household">
+        <div class="hall-copy reveal">
+          <p class="eyebrow">The Campuses</p>
+          <h2>Choose a doorway into Zoe Household Global.</h2>
+          <p>Seven campuses, one household: local people, shared life, one Christ-centered table.</p>
+        </div>
+        <div class="campus-doorways reveal" data-depth="0.08" aria-label="ZOE Household campus doorways">
+          <a class="doorway doorway-atl" href="campus-atl.html?campus=atlanta" data-portal-door data-campus="Atlanta" data-campus-role="USA" data-campus-note="Sunday at 4:00 PM">
+            <span>Atlanta</span>
+            <small>Main campus | Sunday at 4:00 PM</small>
+          </a>
+          <a class="doorway doorway-uk" href="campus-atl.html?campus=uk" data-portal-door data-campus="UK" data-campus-role="UK" data-campus-note="Campus experience">
+            <span>UK</span>
+            <small>Campus experience</small>
+          </a>
+          <a class="doorway doorway-houston" href="campus-atl.html?campus=houston" data-portal-door data-campus="Houston" data-campus-role="USA" data-campus-note="Campus experience">
+            <span>Houston</span>
+            <small>Campus experience</small>
+          </a>
+          <a class="doorway doorway-ikeja" href="campus-atl.html?campus=ikeja" data-portal-door data-campus="Ikeja" data-campus-role="Nigeria" data-campus-note="Campus experience">
+            <span>Ikeja</span>
+            <small>Campus experience</small>
+          </a>
+          <a class="doorway doorway-ipaja" href="campus-atl.html?campus=ipaja" data-portal-door data-campus="Ipaja" data-campus-role="Nigeria" data-campus-note="Campus experience">
+            <span>Ipaja</span>
+            <small>Campus experience</small>
+          </a>
+          <a class="doorway doorway-abeokuta" href="campus-atl.html?campus=abeokuta" data-portal-door data-campus="Abeokuta" data-campus-role="Nigeria" data-campus-note="Campus experience">
+            <span>Abeokuta</span>
+            <small>Campus experience</small>
+          </a>
+          <a class="doorway doorway-yaba" href="campus-atl.html?campus=yaba" data-portal-door data-campus="Yaba" data-campus-role="Nigeria" data-campus-note="Campus experience">
+            <span>Yaba</span>
+            <small>Campus experience</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="section dark-section scene-section scene-teaching" id="sermons" data-scene="teaching">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Gather Around The Word</p>
+          <h2>Where scripture comes alive.</h2>
+        </div>
+        <div class="sermon-feature reveal">
+          <div class="video-frame" data-depth="0.06">
+            <video class="sermon-video" autoplay muted loop playsinline preload="metadata" poster="assets/zoe-worship-leader.jpg" aria-label="ZOE Household YouTube preview video" data-sermon-video>
+              <source src="assets/zoe-youtube-thumbnail.m4v" type="video/mp4">
+              <source src="assets/zoe-youtube-thumbnail.mov" type="video/quicktime">
+            </video>
+            <button class="play-button" type="button" aria-label="Play ZOE Household TV preview with sound" data-sermon-play></button>
+            <p>ZOE Household TV</p>
+          </div>
+          <div class="sermon-copy">
+            <span class="chip">Campus: Atlanta</span>
+            <h3>Beholding Christ in the Household</h3>
+            <p>Watch teachings and worship moments from ZOE Household TV. A future build can pull the latest videos directly into this section.</p>
+            <a class="button button-light youtube-link" href="https://youtube.com/@thezoehouseholdtv5?si=_t1UFKYPPsSxbpCP" target="_blank" rel="noopener"><span class="youtube-icon" aria-hidden="true"></span>Open YouTube</a>
+          </div>
+        </div>
+        <div class="card-row" id="sermon-list">
+          <article class="mini-card reveal"><span class="chip">Atlanta</span><h3>The Household</h3><p>May 24, 2026</p></article>
+          <article class="mini-card reveal"><span class="chip">Ikeja</span><h3>Seeing Him Clearly</h3><p>May 17, 2026</p></article>
+          <article class="mini-card reveal"><span class="chip">Houston</span><h3>Grace for the House</h3><p>May 10, 2026</p></article>
+        </div>
+      </section>
+
+      <section class="section scene-section scene-ministry" id="ministries" data-scene="impact">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Ministries</p>
+          <h2>We see Him, and see us, as He sees us in Him.</h2>
+        </div>
+        <div class="ministry-showcase">
+          <div class="ministry-index reveal" aria-label="ZOE Household ministries">
+            <a href="ministry-pneuma.html"><strong>Pneuma Worship</strong><span>Explore</span></a>
+            <a href="ministry-discipleship.html"><strong>Disciple Program</strong><span>Explore</span></a>
+            <a href="ministry-outreach.html"><strong>Outreach & Missions</strong><span>Explore</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section events-section scene-section scene-events" id="events" data-scene="impact">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Upcoming Events</p>
+          <h2>Gather beyond Sunday.</h2>
+        </div>
+        <div class="event-list">
+          <article class="event-card reveal">
+            <time>Jun 07</time>
+            <div><h3>New Members Check-In</h3><p>Atlanta Campus | Sunday after 4:00 PM service</p></div>
+            <a class="button button-quiet" href="campus-atl.html?campus=atlanta">Details</a>
+          </article>
+          <article class="event-card reveal">
+            <time>Thu</time>
+            <div><h3>Bible Study</h3><p>7:00 PM | 320 Riverside Pkwy</p></div>
+            <a class="button button-quiet" href="prayer.html">Submit Prayer</a>
+          </article>
+          <article class="event-card reveal">
+            <time>Jul 19</time>
+            <div><h3>Ignite Conference</h3><p>Registration pathway placeholder</p></div>
+            <button class="button button-quiet" type="button" data-toast="Prototype action: registration link will connect later.">Register</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cta-grid scene-section scene-invitation" data-scene="impact">
+        <div class="cta-panel reveal" data-scene-card="prayer">
+          <p class="eyebrow">Prayer</p>
+          <h2>Need someone to stand with you?</h2>
+          <p>Prayer should be easy to reach. Share your request and the team can follow up with care.</p>
+          <a class="button button-primary" href="prayer.html">Submit a Prayer Request</a>
+        </div>
+        <div class="cta-panel giving reveal" data-scene-card="giving">
+          <p class="eyebrow">Impact</p>
+          <h2>Look what God is doing through this household.</h2>
+          <p>Generosity fuels care, teaching, outreach, and transformation across every doorway of the household.</p>
+          <a class="button button-secondary" href="https://give.tithe.ly/?formId=38e44ec6-bbde-428c-b073-df0309a7e479&amp;context=modal" target="_blank" rel="noopener">Give</a>
+        </div>
+      </section>
+
+      <section class="section devotional-section scene-section scene-family" data-scene="invitation">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Devotionals</p>
+          <h2>Formation for the week.</h2>
+          <p>These sit before social media because they help people stay rooted in Scripture and reflection beyond Sunday.</p>
+        </div>
+        <div class="social-grid devotional-grid">
+          <article class="social-card devotional-card reveal">
+            <svg class="social-icon" aria-hidden="true" viewBox="0 0 48 48"><path d="M11 11h26v5H11zm0 9h26v5H11zm0 9 13 8 13-8v-1H11z"></path></svg>
+            <h3>The Zoe Devotional</h3>
+            <p>Substack: @thezoedevotional. A devotional pathway for reflection, formation, and daily encouragement.</p>
+            <button class="button button-quiet" type="button" data-toast="The Zoe Devotional Substack redirect link can connect here later.">Substack</button>
+          </article>
+          <article class="social-card devotional-card reveal">
+            <svg class="social-icon" aria-hidden="true" viewBox="0 0 48 48"><path d="M12 9h17a7 7 0 0 1 7 7v23H17a5 5 0 0 1-5-5zm5 5v18a2 2 0 0 0 2 2h12V16a2 2 0 0 0-2-2zm4 5h7v4h-7z"></path></svg>
+            <h3>Bible App Devotional</h3>
+            <p>The available Zoe devotional reading plan is live now on the Bible App.</p>
+            <a class="button button-primary" href="https://www.bible.com/en/reading-plans/71788" target="_blank" rel="noopener">Open Bible App Plan</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section social-section scene-section scene-family" data-scene="invitation">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Stay Connected</p>
+          <h2>Follow the household beyond Sunday.</h2>
+          <p>ZOE Global socials live here. Campus-specific social links live on each campus page.</p>
+        </div>
+        <div class="social-grid">
+          <article class="social-card reveal">
+            <svg class="social-icon" aria-hidden="true" viewBox="0 0 48 48"><rect x="11" y="11" width="26" height="26" rx="8"></rect><circle cx="24" cy="24" r="6"></circle><circle cx="31.5" cy="16.5" r="1.8"></circle></svg>
+            <h3>ZOE Global Instagram</h3>
+            <p>The global Instagram pathway for household-wide announcements, moments, and stories.</p>
+            <button class="button button-quiet" type="button" data-toast="ZOE Global Instagram redirect link can connect here later.">Instagram</button>
+          </article>
+          <article class="social-card reveal">
+            <svg class="social-icon" aria-hidden="true" viewBox="0 0 48 48"><path d="M27 39V25h5l1-6h-6v-3.4c0-1.7.6-2.8 3-2.8h3V7.4c-1.4-.2-3-.4-4.8-.4-5 0-8.2 3-8.2 8.1V19h-5v6h5v14z"></path></svg>
+            <h3>ZOE Global Facebook</h3>
+            <p>The global Facebook pathway for broader updates and community touchpoints.</p>
+            <button class="button button-quiet" type="button" data-toast="ZOE Global Facebook redirect link can connect here later.">Facebook</button>
+          </article>
+          <article class="social-card reveal">
+            <svg class="social-icon" aria-hidden="true" viewBox="0 0 48 48"><path d="M28 8c1.2 5 4.2 8.2 9 9.1v6.4c-3.4-.1-6.5-1.1-9-3v10.9c0 6.3-4.1 10.6-10.2 10.6-5.7 0-9.8-3.8-9.8-9.2 0-5.7 4.4-9.4 10.4-9.4.7 0 1.4.1 2.1.2v6.6a5.6 5.6 0 0 0-2.4-.5c-2.2 0-3.7 1.2-3.7 3s1.4 3 3.4 3c2.3 0 3.7-1.5 3.7-4.2V8z"></path></svg>
+            <h3>ZOE Global TikTok</h3>
+            <p>The global TikTok pathway for short-form teaching, worship, and household moments.</p>
+            <button class="button button-quiet" type="button" data-toast="ZOE Global TikTok redirect link can connect here later.">TikTok</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta scene-section scene-room reveal" data-depth="0.04" data-scene="invitation">
+        <h2>Join the household.</h2>
+        <p>There is room for you here. Come this Sunday, step through a campus doorway, or send a prayer request.</p>
+        <a class="button button-light" href="zoe-map.html">Find Your Campus</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><img src="assets/zoe-global-logo.jpg" alt="ZOE Global"><div><strong>ZOE Household</strong><p>Christ-centered. Spiritually warm. Community-driven.</p></div></div>
+      <p>&copy; <span data-year></span> ZOE Household. Prototype.</p>
+    </footer>
+    <div class="toast" data-toast-box role="status" aria-live="polite"></div>
+    <script src="assets/gsap.min.js"></script>
+    <script src="script.js?v=header-ministries"></script>
+  </body>
+</html>

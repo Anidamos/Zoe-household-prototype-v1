@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prayer Request | ZOE Household</title>
+    <meta name="description" content="Submit a prayer request to ZOE Household.">
+    <link rel="stylesheet" href="styles.css?v=hero-crop-higher-zoom">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="assets/zoe-mark-logo.png" alt=""></span><span><strong>ZOE Household</strong><small>Prayer</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="index.html">Home</a><a href="zoe-map.html">Campuses</a><div class="nav-menu"><button class="nav-menu-toggle" type="button" aria-expanded="false" data-nav-menu-toggle>Ministries</button><div class="nav-dropdown" aria-label="Ministry pages"><a href="ministry-pneuma.html"><strong>Pneuma Worship</strong><span>Worship</span></a><a href="ministry-discipleship.html"><strong>Disciple Program</strong><span>Formation</span></a><a href="ministry-outreach.html"><strong>Outreach & Missions</strong><span>Mission</span></a></div></div><a href="contact.html">Contact</a><a class="nav-give" href="prayer.html" aria-current="page">Prayer</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero prayer-hero">
+        <div class="page-hero-copy reveal">
+          <p class="eyebrow">Prayer Request</p>
+          <h1>You do not have to carry it alone.</h1>
+          <p>Share your request with care. A future build can route requests through ChurchOS, captcha, and a prayer-team ticketing workflow.</p>
+        </div>
+      </section>
+      <section class="section split-section">
+        <form class="form-card reveal wide-form" data-demo-form>
+          <h2>Submit a prayer request</h2>
+          <label>Name<input name="name" required placeholder="First and last name"></label>
+          <label>Email<input name="email" type="email" required placeholder="you@example.com"></label>
+          <label>Campus<select name="campus" required><option value="">Select campus</option><option>Atlanta</option><option>Houston</option><option>UK</option><option>Ikeja</option><option>Ipaja</option><option>Abeokuta</option><option>Yaba</option><option>Online</option></select></label>
+          <label>Prayer request<textarea name="request" required maxlength="1500" placeholder="How can we pray with you?"></textarea></label>
+          <label class="checkbox"><input type="checkbox" name="followup"> I would like someone to follow up with me.</label>
+          <button class="button button-primary" type="submit">Send Prayer Request</button>
+          <p class="form-note">Captcha or Cloudflare Turnstile placeholder for the production build.</p>
+          <p class="form-status" data-form-status></p>
+        </form>
+        <div class="resource-panel resource-panel-photo reveal">
+          <p class="eyebrow">Prayer Resources</p>
+          <h2>Teachings and care can live here.</h2>
+          <a href="https://youtube.com/@thezoehouseholdtv5?si=_t1UFKYPPsSxbpCP" target="_blank" rel="noopener">Sermon: Grace for the House</a>
+          <a href="https://youtube.com/@thezoehouseholdtv5?si=_t1UFKYPPsSxbpCP" target="_blank" rel="noopener">Teaching: Seeing Him Clearly</a>
+          <a href="campus-atl.html?campus=atlanta">Attend Thursday Bible Study at 7:00 PM</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-brand"><img src="assets/zoe-global-logo.jpg" alt="ZOE Global"><div><strong>ZOE Household</strong><p>Prayer page prototype.</p></div></div><p>&copy; <span data-year></span> ZOE Household.</p></footer>
+    <script src="assets/gsap.min.js"></script>
+    <script src="script.js?v=header-ministries"></script>
+  </body>
+</html>
